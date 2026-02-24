@@ -17,7 +17,7 @@ Space Complexity: O(n)
 
 import java.util.*;
 
-public class Solution {
+public class sort_vowels_in_a_string {
     public String sortVowels(String s) {
         Set<Character> vowelsSet = new HashSet<>(
             Arrays.asList('a','e','i','o','u','A','E','I','O','U')
