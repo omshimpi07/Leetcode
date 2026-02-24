@@ -1,4 +1,4 @@
-/*
+/* 
 Problem: 2785. Sort Vowels in a String
 Link: https://leetcode.com/problems/sort-vowels-in-a-string/
 Difficulty: Medium
@@ -13,11 +13,9 @@ Time Complexity: O(n log n)
 Space Complexity: O(n)
 */
 
-
-
 import java.util.*;
 
-public class sort_vowels_in_a_string {
+public class Solution {
     public String sortVowels(String s) {
         Set<Character> vowelsSet = new HashSet<>(
             Arrays.asList('a','e','i','o','u','A','E','I','O','U')
