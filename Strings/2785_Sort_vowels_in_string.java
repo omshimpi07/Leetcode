@@ -46,7 +46,6 @@ public class Solution {
         return result.toString();
     }
 
-    // Example usage
     public static void main(String[] args) {
         Solution sol = new Solution();
         System.out.println(sol.sortVowels("lEetcOde")); // lEOtcede
