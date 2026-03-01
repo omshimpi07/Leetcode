@@ -5,8 +5,7 @@ Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one s
 The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has enough space (size that is equal to m + n) to hold additional elements from nums2.
 
 Example 1:
-Input: nums1 = [1,2,3,0,0,0], m
-    = 3, nums2 = [2,5,6], n = 3
+Input: nums1 = [1,2,3,0,0,0], m= 3, nums2 = [2,5,6], n = 3
 Output: [1,2,2,3,5,6]
 
 Example 2:
@@ -24,6 +23,7 @@ Approach:
     nums2, and one for the end of the merged array.
 2. Compare elements from the end of nums1 and nums2, and place the larger one at the end of nums1.
 3. Move the pointers accordingly until all elements from nums2 are merged into nums1.
+
 Time Complexity: O(m + n)
 Space Complexity: O(1)
 
