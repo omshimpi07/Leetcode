@@ -19,14 +19,12 @@ Approach:
 3. After the first loop, check if i is at the start or end of the array
 4. If not, traverse the array while the next element is less than the current element (descending part of the mountain).
 5. Finally, check if i has reached the end of the array, if so return true
+
 Time Complexity: O(n)
 Space Complexity: O(1)
 
 
-
 */
-
-
 
 class Solution {
     public boolean validMountainArray(int[] arr) {
