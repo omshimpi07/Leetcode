@@ -22,7 +22,10 @@ class Solution {
             int n = nums.length;
             int low = 2;
             int high = n-3;
-
+            
+            if(nums.length == 1){
+                return nums[0];
+            }
             if(nums[0] != nums[1]){
                 return nums[0];
             }
