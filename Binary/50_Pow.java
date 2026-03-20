@@ -13,8 +13,8 @@ Approach:
 2. Use exponentiation by squaring to calculate x^n efficiently. This method reduces the number of multiplications needed, resulting in a time complexity of O(log n).
 Time Complexity: O(log n)
 Space Complexity: O(1)
-
 */
+
 class Solution {
     public double myPow(double x, int n) {
         
