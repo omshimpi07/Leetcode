@@ -15,7 +15,6 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 
 */
-
 class Solution {
     public double myPow(double x, int n) {
         
@@ -26,7 +25,6 @@ class Solution {
             x = 1/x;
             BinForm = -BinForm;
         }
-        
         while( BinForm > 0){
 
             if(BinForm % 2 == 1){
