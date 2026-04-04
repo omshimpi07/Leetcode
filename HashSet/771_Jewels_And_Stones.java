@@ -25,7 +25,6 @@ class Solution {
             set.add(ch);
         }
         int count = 0;
-        
         for (char ch : stones.toCharArray()) {
             if (set.contains(ch)) {
                 count++;
