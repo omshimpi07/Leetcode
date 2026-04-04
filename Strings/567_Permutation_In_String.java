@@ -34,6 +34,7 @@ class Solution {
        {
            count2[s2.charAt(i) - 'a']++;
            count2[s2.charAt(j) - 'a']--;
+           
            if (Arrays.equals(count1, count2))
            return true;
            j++;
