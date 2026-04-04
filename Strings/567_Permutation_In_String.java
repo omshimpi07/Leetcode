@@ -12,7 +12,6 @@ Constraints:
 s1 and s2 consist of lowercase English letters.
 Difficulty : medium
 */
-
 class Solution {
    public boolean checkInclusion(String s1, String s2) {
        int n1 = s1.length();
