@@ -28,7 +28,6 @@ class Solution {
     public String[] uncommonFromSentences(String s1, String s2) {
         
         HashMap<String, Integer> map = new HashMap<>();
-
         String[] a = s1.split(" ");
         String[] b = s2.split(" ");
 
@@ -39,7 +38,6 @@ class Solution {
         for(String word : b){
             map.put(word, map.getOrDefault(word, 0) + 1);
         }
-
         List<String> answer = new ArrayList<>();
 
         for(String key : map.keySet()){
