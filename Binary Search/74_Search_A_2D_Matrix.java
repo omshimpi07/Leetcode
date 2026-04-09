@@ -24,7 +24,6 @@ class Solution {
         
         int rows = matrix.length;
         int cols = matrix[0].length;
-        
         int left = 0;
         int right = rows * cols - 1;
         
