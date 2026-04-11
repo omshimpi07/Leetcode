@@ -22,7 +22,7 @@ class Solution {
             int preSum = arr[i];
             map.put(preSum, map.getOrDefault(preSum, 0) + 1);
         }
-        
+    
         HashSet<Integer> set = new HashSet<>();
 
         for (int freq : map.values()) {
@@ -31,6 +31,7 @@ class Solution {
             }
             set.add(freq);
         }
+
         return true;
     }
 }
