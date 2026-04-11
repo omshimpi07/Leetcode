@@ -29,6 +29,7 @@ class Solution {
             int presum = arr[i];
             map.put(presum,map.getOrDefault(presum,0)+1);
         }
+        
         int maxLucky = -1;
 
         for (Map.Entry<Integer, Integer> e : map.entrySet()) {
