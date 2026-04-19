@@ -8,8 +8,7 @@ Return a string of the words in reverse order concatenated by a single space.
 Example 1: Input: s = "the sky is blue" Output: "blue is sky the"
 Example 2: Input: s = "  hello world  " Output: "world hello"
 
-Constraints:
-1 <= s.length <= 104
+Constraints: 1 <= s.length <= 104
 s consists of English letters (upper-case and lower-case), digits, and spaces ' '.
 s contains at least one word.
 Difficulty: Medium
@@ -21,7 +20,6 @@ Approach:
 Time Complexity: O(n) where n is the length of the input string.
 Space Complexity: O(n) for storing the split words and the result string.
 */
-
 class Solution {
     public String reverseWords(String s) {
         
