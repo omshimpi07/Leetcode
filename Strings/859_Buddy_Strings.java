@@ -22,7 +22,6 @@ Space Complexity: O(1) since we are using a fixed-size frequency array for the c
 class Solution {
     public boolean buddyStrings(String s, String goal) {
         
-
         if(s.length() != goal.length()) return false;
 
         // Case 1: same string
@@ -37,7 +36,6 @@ class Solution {
             }
             return false;
         }
-
         // Case 2: find mismatches
         int first = -1, second = -1;
 
@@ -48,7 +46,6 @@ class Solution {
                 else return false;
             }
         }
-
         return (second != -1 &&
                 s.charAt(first) == goal.charAt(second) &&
                 s.charAt(second) == goal.charAt(first));
