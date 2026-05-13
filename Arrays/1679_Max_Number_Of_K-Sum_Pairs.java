@@ -28,9 +28,6 @@ Time Complexity: O(n) where n is the length of the input array.
 Space Complexity: O(n) for the HashMap that stores the frequency of each number in the input array.
 */
 
-
-
-
 class Solution {
     public int maxOperations(int[] nums, int k) {
         
@@ -51,7 +48,6 @@ class Solution {
             else{
                 right--;
             }
-            
         }
         return output;
     }
