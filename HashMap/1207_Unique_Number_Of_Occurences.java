@@ -31,6 +31,11 @@ class Solution {
             }
             set.add(freq);
         }
+        // HashSet<Integer> Set = new HashSet<>(map.values());
+        // if(map.size() != Set.size()){
+        //     return false;
+        // }
+        // return true;
 
         return true;
     }
