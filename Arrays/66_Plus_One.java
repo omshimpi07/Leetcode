@@ -20,7 +20,6 @@ Space Complexity: O(n) in the worst case when all digits are 9, requiring a new 
 
 */
 
-
 class Solution {
     public int[] plusOne(int[] digits) {
 
