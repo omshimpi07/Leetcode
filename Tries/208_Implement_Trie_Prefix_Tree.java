@@ -34,7 +34,7 @@ Approach : Trie.
      b. For each character, calculate its index and check if the corresponding child node exists. If not, return false.      
      c. Move to the child node and continue until all characters are processed. Return true if all characters are found.
 
-     Time Complexity: O(m) for insert, search, and startsWith methods, where m is the length of the word or prefix being processed.
+Time Complexity: O(m) for insert, search, and startsWith methods, where m is the length of the word or prefix being processed.
 Space Complexity: O(n * m) for the trie, where n is the number of words
 */
 
