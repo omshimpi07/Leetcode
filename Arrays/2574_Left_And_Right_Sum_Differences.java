@@ -11,41 +11,65 @@ Example 1: Input: nums = [10,4,8,3] Output: [15,1,11,22]
 Explanation: The array leftSum is [0,10,14,22] and the array rightSum is [15,11,3,0].
 The array answer is [|0 - 15|,|10 - 11|,|14 - 3|,|22 - 0|] = [15,1,11,22].
 
+Difficulty : Easy
+
 */
 
 class Solution {
     public int[] leftRightDifference(int[] nums) {
         
-        int left[] = new int[nums.length];
-        int right[] = new int[nums.length];
-        left[0] = 0;
-        int sum = 0;
-        int sum1 = 0;
-        for(int i = 1 ; i<nums.length ; i++){
+        // int left[] = new int[nums.length];
+        // int right[] = new int[nums.length];
+        // left[0] = 0;
+        // int sum = 0;
+        // int sum1 = 0;
+        // for(int i = 1 ; i<nums.length ; i++){
 
-            sum += nums[i - 1];
-            left[i] = sum;
-        }
+        //     sum += nums[i - 1];
+        //     left[i] = sum;
+        // }
 
-        right[nums.length - 1] = 0;
-        for(int i = nums.length - 2 ; i>= 0 ; i--){
+        // right[nums.length - 1] = 0;
+        // for(int i = nums.length - 2 ; i>= 0 ; i--){
 
-            sum1 += nums[i + 1];
+        //     sum1 += nums[i + 1];
 
-            right[i] = sum1;
-        }
+        //     right[i] = sum1;
+        // }
 
-        int output[] = new int[nums.length];
+        // int output[] = new int[nums.length];
        
-        for(int i = 0; i< nums.length ; i++){
+        // for(int i = 0; i< nums.length ; i++){
 
-            output[i] = Math.abs(left[i] - right[i]);
+        //     output[i] = Math.abs(left[i] - right[i]);
            
+        // }
+
+        // return output;
+
+        int totalSum = 0;
+
+        for (int x : nums) {
+            totalSum += x;
+        }
+
+        // STEP 2: Calculate each index's difference
+        int leftSum = 0;
+        int[] output = new int[nums.length];
+
+        for (int i = 0; i < nums.length; i++) {
+
+            // Calculate right sum using total sum
+            int rightSum = totalSum - leftSum - nums[i];
+
+            // Calculate absolute difference
+            output[i] = Math.abs(leftSum - rightSum);
+
+            // Include current element for the next index
+            leftSum += nums[i];
         }
 
         return output;
-
-
 
     }
 }
