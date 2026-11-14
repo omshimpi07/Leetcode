@@ -8,3 +8,4 @@ Solving problems daily to improve Data Structures & Algorithms.
 ## Approach
 - Consistency over perfection
 - Focus on patterns, not just solutions
+- Dedication towards building great problem solving habit
